@@ -229,7 +229,7 @@ const Home = () => {
         <div className='row'>
           <div className='col-3'>
             <div className='famous-card position-relative'>
-              <img src='images/famous.jpg' className='img-fluid' alt='famous' />
+              <img src='images/image_processing.jpg' className='img-fluid' alt='famous' />
               <div className='famous-content position-absolute'>
                 <h5>Big Screen</h5>
                 <h6>Smart Watch Series</h6>
@@ -239,9 +239,9 @@ const Home = () => {
           </div>
           <div className='col-3'>
             <div className='famous-card position-relative'>
-              <img src='images/famous-1.jpg' className='img-fluid' alt='famous' />
+              <img src='images/headphones-discount.jpg' className='img-fluid' alt='famous' />
               <div className='famous-content position-absolute'>
-                <h5>Studio Display</h5>
+                <h5>headphones Display</h5>
                 <h6>Laptop HP</h6>
                 <p>From $399 or $16.62/mo. for 24 mo.*</p>
                 </div>
@@ -249,11 +249,21 @@ const Home = () => {
           </div>
           <div className='col-3'>
             <div className='famous-card position-relative'>
-              <img src='images/famous-2.jpg' className='img-fluid' alt='famous' />
+              <img src='images/mobile-screen-frame-collage-2.jpg' className='img-fluid' alt='famous' />
               <div className='famous-content position-absolute'>
-                <h5>Watch Display</h5>
+                <h5>Phone</h5>
                 <h6>Infinix HOT16</h6>
                 <p>From $399 or $16.62/mo. for 24 mo.*</p>
+                </div>
+            </div>
+          </div>
+          <div className='col-3'>
+            <div className='famous-card position-relative'>
+              <img src='images/special-furniture.jpg' className='img-fluid' alt='famous' />
+              <div className='famous-content position-absolute'>
+                <h5>Special furniture</h5>
+                <h6>Couch</h6>
+                <p>From $900 or $30.62/mo. for 18 mo.*</p>
                 </div>
             </div>
           </div>
@@ -273,6 +283,7 @@ const Home = () => {
           
         </div>
         <div className='row'>
+          <SpecialProduct />
           <SpecialProduct />
           <SpecialProduct />
           <SpecialProduct />
