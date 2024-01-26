@@ -1,4 +1,5 @@
 import React from 'react'
+import BreadCrumb from '../components/BreadCrumb'
 
 /**
  * 
@@ -9,7 +10,9 @@ import React from 'react'
  */
 const OurStore = () => {
   return (
-    <div>OurStore</div>
+    <>
+      <BreadCrumb title="Our Store"/>
+    </>
   )
 }
 
