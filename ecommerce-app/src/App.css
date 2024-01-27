@@ -362,31 +362,76 @@ footer .input-group-text {
 
 .famous-card .famous-content {
   top: 10%;
-  left: 10%;
+  left: 5%;
 }
 .famous-card img {
   border-radius: 10px;
+  height: 270px;
 }
 .famous-content h5 {
-  font-size: 13px;
+  font-size: 17px;
   line-height: 20px;
   font-weight: 400px;
   color: yellow;
   margin-bottom: 7px;
   text-shadow: 10px 10px 10px red;
+  text-transform: uppercase;
 }
  
 .famous-content h6 {
   font-size: 15px;
-  line-height: 38px;
+  line-height: 20px;
   font-weight: 500;
-  color: black;
+  color: white;
 }
 
 .famous-content p {
   font-size: 13px;
   line-height: 24px;
   font-weight: 100;
-  color: black;
+  color: blue;
 }
 /* Famous card ends here */
+
+/* Our Store */
+
+.filter-card{
+  background-color: white;
+  padding:10px 15px;
+  border-radius: 10px;
+}
+
+.filter-title {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-1c1c1b);
+  margin-bottom: 20px;
+}
+
+.filter-card ul,
+.filter-card .form-check-label {
+  list-style: none;
+  font-size: 13px;
+  line-height: 30px;
+  color: var(--color-777777);
+  cursor: pointer;
+}
+
+.sub-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.filter-card .form-check:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.filter-card .form-check-input:checked {
+  background-color: var(--color-febd69);
+  border-color: var(--color-febd69);
+}
+/* Our Store ends here */
