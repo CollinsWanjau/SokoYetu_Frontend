@@ -205,6 +205,20 @@ const OurStore = () => {
             {/* Main content area (products) */}
             <div className='col-9'>
               {/* Add your main content here */}
+              <div className='filter-sort-grid'>
+                <div className='d-flex align-items-center gap-10'>
+                  <p className='mb-0'>Sort By;</p>
+                  <select name='' className='form-control form-select' id=''>
+                    <option value='manual'>Featured</option>
+                    <option value='best-selling' selected='selected'>Best selling</option>
+                    <option value='title-ascending'>Alphabetically, A-Z</option>
+                    <option value='title-descending'>Alphabetically, Z-A</option>
+                    <option value='title-ascending'>Price, low to high</option>
+                    <option value='title-ascending'>Price, high to low</option>
+                    <option value='title-ascending'>Date, old to new</option>
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
         </div>
