@@ -9,6 +9,7 @@ import Layout from './components/Layout';
 import Home from './Pages/Home';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
+import OurStore from './Pages/OurStore';
 
 // Defining the main App component
 function App() {
@@ -25,6 +26,7 @@ return (
       <Route path='about' element={<About />}/>
       {/* Route for contact page */}
       <Route path='contact' element={<Contact />}/>
+      <Route path='store' element={<OurStore />}/>
     </Route>
   </Routes>
   </BrowserRouter>

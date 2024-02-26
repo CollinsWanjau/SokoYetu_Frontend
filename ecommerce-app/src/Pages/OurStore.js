@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState} from 'react'
 import ReactStars from "react-rating-stars-component";
 import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
-
+import ProductCard from '../components/ProductCard'
 /**
  * 
  * Our Store Component.
@@ -11,6 +11,8 @@ import Meta from '../components/Meta'
  * @return {JSX.Element} The rendered Store component
  */
 const OurStore = () => {
+  const [grid, setGrid] = useState()
+  alert(grid)
   return (
     <>
       {/* Meta component for setting the page title */}
@@ -205,9 +207,10 @@ const OurStore = () => {
             {/* Main content area (products) */}
             <div className='col-9'>
               {/* Add your main content here */}
-              <div className='filter-sort-grid'>
-                <div className='d-flex align-items-center gap-10'>
-                  <p className='mb-0'>Sort By;</p>
+              <div className='filter-sort-grid mb-5'>
+                <div className='d-flex align-items-center justify-content-between'>
+                  <div className='d-flex align-items-center gap-11'>
+                  <p className='mb-0 d-block style={{ "width": "100px"}}'>Sort By;</p>
                   <select name='' className='form-control form-select' id=''>
                     <option value='manual'>Featured</option>
                     <option value='best-selling' selected='selected'>Best selling</option>
@@ -216,8 +219,46 @@ const OurStore = () => {
                     <option value='title-ascending'>Price, low to high</option>
                     <option value='title-ascending'>Price, high to low</option>
                     <option value='title-ascending'>Date, old to new</option>
+                    <option value='title-ascending'>Date, new to old</option>
                   </select>
                 </div>
+                <div className='d-flex align-items-center gap-10'>
+                  <p className='totalproducts mb-0'>21 products</p>
+                  <div className='d-flex gap-10 align-items-center grid'>
+                    <img onClick={() => {
+                      setGrid(4)
+                    }}
+                      src='images/gr4.svg'
+                      className='d-block img-fluid'
+                      alt='grid'
+                    />
+                    <img onClick={() => {
+                      setGrid(3)
+                    }}
+                      src='images/gr3.svg'
+                      className='d-block img-fluid'
+                      alt='grid'
+                    />
+                    <img onClick={() => {
+                      setGrid(2)
+                    }}
+                      src='images/gr2.svg'
+                      className='d-block img-fluid'
+                      alt='grid'
+                    />
+                    <img onClick={() => {
+                      setGrid(1)
+                    }}
+                      src='images/gr.svg'
+                      className='d-block img-fluid'
+                      alt='grid'
+                    />
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div className='product-list pb-5'>
+                <ProductCard grid={grid}/>
               </div>
             </div>
           </div>
